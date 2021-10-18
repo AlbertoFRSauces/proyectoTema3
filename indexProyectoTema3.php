@@ -262,12 +262,12 @@
                         </td>
                         <td>
                             <figure>
-                                <a href="../webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
+                                <a href="codigoPHP/ejercicio11.php"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
                             </figure>
                         </td>
                         <td>
                             <figure>
-                                <a href="../webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
+                                <a href="mostrarcodigo/muestraEjercicio11.php"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
                             </figure>
                         </td>
                     </tr>
@@ -283,12 +283,12 @@
                         </td>
                         <td>
                             <figure>
-                                <a href="../webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
+                                <a href="codigoPHP/ejercicio12.php"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
                             </figure>
                         </td>
                         <td>
                             <figure>
-                                <a href="../webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
+                                <a href="mostrarcodigo/muestraEjercicio12.php"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
                             </figure>
                         </td>
                     </tr>
@@ -304,12 +304,12 @@
                         </td>
                         <td>
                             <figure>
-                                <a href="../webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
+                                <a href="codigoPHP/ejercicio13.php"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
                             </figure>
                         </td>
                         <td>
                             <figure>
-                                <a href="../webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
+                                <a href="mostrarcodigo/muestraEjercicio13.php"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
                             </figure>
                         </td>
                     </tr>
@@ -325,12 +325,12 @@
                         </td>
                         <td>
                             <figure>
-                                <a href="../webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
+                                <a href="codigoPHP/ejercicio14.php"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
                             </figure>
                         </td>
                         <td>
                             <figure>
-                                <a href="../webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
+                                <a href="mostrarcodigo/muestraEjercicio14.php"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
                             </figure>
                         </td>
                     </tr>
@@ -346,12 +346,12 @@
                         </td>
                         <td>
                             <figure>
-                                <a href="../webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
+                                <a href="codigoPHP/ejercicio15.php"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
                             </figure>
                         </td>
                         <td>
                             <figure>
-                                <a href="../webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
+                                <a href="mostrarcodigo/muestraEjercicio15.php"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
                             </figure>
                         </td>
                     </tr>
@@ -367,12 +367,12 @@
                         </td>
                         <td>
                             <figure>
-                                <a href="../webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
+                                <a href="codigoPHP/ejercicio16.php"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
                             </figure>
                         </td>
                         <td>
                             <figure>
-                                <a href="../webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
+                                <a href="mostrarcodigo/muestraEjercicio16.php"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
                             </figure>
                         </td>
                     </tr>
@@ -393,12 +393,12 @@
                         </td>
                         <td>
                             <figure>
-                                <a href="../webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
+                                <a href="codigoPHP/ejercicio17.php"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
                             </figure>
                         </td>
                         <td>
                             <figure>
-                                <a href="../webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
+                                <a href="mostrarcodigo/muestraEjercicio17.php"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
                             </figure>
                         </td>
                     </tr>
@@ -414,12 +414,12 @@
                         </td>
                         <td>
                             <figure>
-                                <a href="../webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
+                                <a href="codigoPHP/ejercicio18.php"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
                             </figure>
                         </td>
                         <td>
                             <figure>
-                                <a href="../webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
+                                <a href="mostrarcodigo/muestraEjercicio18.php"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
                             </figure>
                         </td>
                     </tr>
@@ -435,12 +435,12 @@
                         </td>
                         <td>
                             <figure>
-                                <a href="../webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
+                                <a href="codigoPHP/ejercicio19.php"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
                             </figure>
                         </td>
                         <td>
                             <figure>
-                                <a href="../webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
+                                <a href="mostrarcodigo/muestraEjercicio19.php"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
                             </figure>
                         </td>
                     </tr>
@@ -456,12 +456,12 @@
                         </td>
                         <td>
                             <figure>
-                                <a href="../webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
+                                <a href="codigoPHP/ejercicio20.php"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
                             </figure>
                         </td>
                         <td>
                             <figure>
-                                <a href="../webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
+                                <a href="mostrarcodigo/muestraEjercicio20.php"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
                             </figure>
                         </td>
                     </tr>
@@ -477,12 +477,12 @@
                         </td>
                         <td>
                             <figure>
-                                <a href="../webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
+                                <a href="../proyectoTema3/webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
                             </figure>
                         </td>
                         <td>
                             <figure>
-                                <a href="../webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
+                                <a href="../proyectoTema3/webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
                             </figure>
                         </td>
                     </tr>
@@ -498,12 +498,12 @@
                         </td>
                         <td>
                             <figure>
-                                <a href="../webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
+                                <a href="../proyectoTema3/webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
                             </figure>
                         </td>
                         <td>
                             <figure>
-                                <a href="../webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
+                                <a href="../proyectoTema3/webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
                             </figure>
                         </td>
                     </tr>
@@ -519,12 +519,12 @@
                         </td>
                         <td>
                             <figure>
-                                <a href="../webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
+                                <a href="../proyectoTema3/webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
                             </figure>
                         </td>
                         <td>
                             <figure>
-                                <a href="../webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
+                                <a href="../proyectoTema3/webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
                             </figure>
                         </td>
                     </tr>
@@ -545,12 +545,12 @@
                         </td>
                         <td>
                             <figure>
-                                <a href="../webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
+                                <a href="../proyectoTema3/webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
                             </figure>
                         </td>
                         <td>
                             <figure>
-                                <a href="../webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
+                                <a href="../proyectoTema3/webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
                             </figure>
                         </td>
                     </tr>
@@ -566,12 +566,12 @@
                         </td>
                         <td>
                             <figure>
-                                <a href="../webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
+                                <a href="../proyectoTema3/webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
                             </figure>
                         </td>
                         <td>
                             <figure>
-                                <a href="../webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
+                                <a href="../proyectoTema3/webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
                             </figure>
                         </td>
                     </tr>
@@ -591,12 +591,12 @@
                         </td>
                         <td>
                             <figure>
-                                <a href="../webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
+                                <a href="../proyectoTema3/webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
                             </figure>
                         </td>
                         <td>
                             <figure>
-                                <a href="../webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
+                                <a href="../proyectoTema3/webroot/css/img/imgconstruction.jpg"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
                             </figure>
                         </td>
                     </tr>
@@ -604,10 +604,10 @@
             </section>
         </main>
         <footer class="piepagina">
-            <a href="../proyectoDWES/indexProyectoDWES.php"><img src="../webroot/css/img//atras.png" class="imageatras" alt="IconoAtras" /></a>
-            <a href="https://github.com/AlbertoFRSauces/proyectoTema3" target="_blank"><img href="https://github.com/AlbertoFRSauces/proyectoTema3" target="_blank" src="../webroot/css/img//github.png" class="imagegithub" alt="IconoGitHub" /></a>
+            <a href="../proyectoDWES/indexProyectoDWES.php"><img src="../proyectoTema3/webroot/css/img/atras.png" class="imageatras" alt="IconoAtras" /></a>
+            <a href="https://github.com/AlbertoFRSauces/proyectoTema3" target="_blank"><img src="../proyectoTema3/webroot/css/img/github.png" class="imagegithub" alt="IconoGitHub" /></a>
             <p><a>&copy;</a>Alberto Fernández Ramírez 29/09/2021 Todos los derechos reservados.</p>
-            <p>Ultima actualización: 14/10/2021 18:59</p>
+            <p>Ultima actualización: 18/10/2021 22:59</p>
         </footer>
     </body>
 </html>

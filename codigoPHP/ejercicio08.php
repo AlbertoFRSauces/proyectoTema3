@@ -13,7 +13,8 @@
             * Created on: 14-octubre-2021
             * Ejercicio 8. Mostrar la direccion ip del equipo desde el que estas accediendo.
         */
-        echo $_SERVER['REMOTE_ADDR'];
+        //Con la variable superglobal SERVER y el parametro 'REMOTE_ADDR' obtengo la ip desde donde se esta accediendo.
+        echo "<p>La IP del equipo es <strong>".$_SERVER['REMOTE_ADDR']."</strong></p>";
     ?>
 </body>
 </html>

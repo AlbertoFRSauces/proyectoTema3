@@ -13,7 +13,7 @@
             * Created on: 07-octubre-2021
             * Ejercicio 0. Hola mundo y phpinfo().
         */
-        echo '<p>Hola Mundo</p>'; 
+        echo '<p>Este es el Hola Mundo de Alberto.</p>'; 
         phpinfo();
     ?>
 </body>

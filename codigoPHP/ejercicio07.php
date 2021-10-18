@@ -13,7 +13,9 @@
             * Created on: 14-octubre-2021
             * Ejercicio 7. Mostrar el nombre del fichero que se esta ejecutando.
         */
-        echo basename($_SERVER['PHP_SELF']);
+        //La funcion basename nos devuelve el ultimo componente de nombre de una ruta,
+        //la ruta se obtiene con la variable superglobal SERVER y el parametro 'PHP_SELF'.
+        echo "<p>El nombre del fichero que se esta ejecutando es <strong>".basename($_SERVER['PHP_SELF'])."</strong></p";
     ?>
 </body>
 </html>

@@ -13,9 +13,18 @@
             * Created on: 14-octubre-2021
             * Ejercicio 3. Mostrar en tu pagina web la fecha y la hora actual formateada en castellano.(Utilizar cuando sea posible la clase datetime)
         */
+        //Ver zona horaria en la que estamos.
+        echo '<p>Zona horaria por defecto</p>';
+        echo date_default_timezone_get();
+        echo '</br>';
+        //Cambiar la zona horaria a España.
         date_default_timezone_set('Europe/Madrid');
         $fechaActual = getdate();
         print_r($fechaActual);
+        
+        
+        
+       
     ?>
 </body>
 </html>

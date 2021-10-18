@@ -13,6 +13,8 @@
             * Created on: 14-octubre-2021
             * Ejercicio 2. Inicializar y mostrar una variable heredoc.
         */
+        //Si queremos mostrar por pantalla un texto con el formato de este tipo, usamos la variable heredoc,
+        // la inicializamos, le ponemos el contenido, la cerramos con su nombre y cuando este terminada la imprimimos con print.
         $a=<<<MiCadena
         Desarrollo web entorno servidor</br>
         Esta es una variable heredoc

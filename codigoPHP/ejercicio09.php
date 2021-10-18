@@ -13,8 +13,8 @@
             * Created on: 14-octubre-2021
             * Ejercicio 9. Mostrar el path donde se encuentra el fichero que se esta ejecutando.
         */
-        echo basename(__FILE__);
-        
+        //Mostrar con la variable superglobal $_SERVER el path.
+        echo $_SERVER('PATH'); 
     ?>
 </body>
 </html>

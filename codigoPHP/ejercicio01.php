@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 01</title>
+    <style>
+        strong{color: red;}
+    </style>
 </head>
 <body>
     <?php
@@ -39,20 +42,24 @@
         printf('<p>La variable $bBoolean tiene el valor <strong>'.$bBoolean."</strong> y es de tipo boolean.</p>");
         //Mostrar las variables con print_r
         print_r("<h1>Variables mostradas por pantalla con print_r:</h1>");
-        print_r('La variable $sString tiene el valor <strong>'.$sString."</strong> y es de tipo string.</p>");
+        print_r('<p>La variable $sString tiene el valor <strong>'.$sString."</strong> y es de tipo string.</p>");
         print_r('<p>La variable $iInt tiene el valor <strong>'.$iInt."</strong> y es de tipo string.</p>");
         print_r('<p>La variable $fFloat tiene el valor <strong>'.$fFloat."</strong> y es de tipo string.</p>");
         print_r('<p>La variable $bBoolean tiene el valor <strong>'.$bBoolean."</strong> y es de tipo boolean.</p>");
-        //Mostrar las variables con var_dump\
-        var_dump("<h1>Variables mostradas por pantalla con var_dump:</h1>");
+        //Mostrar las variables con var_dump, muestra el valor de las variables
+        echo '<h1>Variables mostradas por pantalla con var_dump:</h1>';
+        echo '<p>La variable $sString tiene el varlor <strong>';
         var_dump($sString);
-        echo "<br>";
+        echo '</strong> y es de tipo string.</p>';
+        echo '<p>La variable $iInt tiene el varlor <strong>';
         var_dump($iInt);
-        echo "<br>";
+        echo '</strong> y es de tipo int.</p>';
+        echo '<p>La variable $fFloat tiene el varlor <strong>';
         var_dump($fFloat);
-        echo "<br>";
+        echo '</strong> y es de tipo float.</p>';
+        echo '<p>La variable $bBoolean tiene el varlor <strong>';
         var_dump($bBoolean);
-        echo "<br>";
+        echo '</strong> y es de tipo boolean.</p>';
     ?>
 </body>
 </html>

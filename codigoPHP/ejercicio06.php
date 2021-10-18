@@ -13,7 +13,9 @@
             * Created on: 14-octubre-2021
             * Ejercicio 6. Operar con fechas: Calcular la fecha y el dia de la semana dentro de 60 dias.
         */
-        echo date("d-m-Y", strtotime("+60 days"));
+        //Operacion realizada con la funcion date para darle formato a la fecha 
+        //y con la funcion strtotime() la cual permite pasarle los dias que le queremos sumar a la fecha actual.
+        echo "<p>La fecha actual mas 60 dias es <strong>".date("d-m-Y", strtotime("+60 days"))."</strong></p>";
     ?>
 </body>
 </html>
