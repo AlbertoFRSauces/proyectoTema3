@@ -28,12 +28,12 @@
                                 <a><figcaption class="titulofoto">0. Hola mundo y phpinfo().</figcaption></a>
                             </figure>
                         </td>
-                        <td>
+                        <td class="cajaimagen">
                             <figure>
                                 <a href="codigoPHP/ejercicio00.php"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
                             </figure>
                         </td>
-                        <td>
+                        <td class="cajaimagen">
                             <figure>
                                 <a href="mostrarcodigo/muestraEjercicio00.php"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
                             </figure>
@@ -70,12 +70,12 @@
                                 <a><figcaption class="titulofoto">2. Inicializar y mostrar una variable heredoc.</figcaption></a>
                             </figure>
                         </td>
-                        <td>
+                        <td class="cajaimagen">
                             <figure>
                                 <a href="codigoPHP/ejercicio02.php"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
                             </figure>
                         </td>
-                        <td>
+                        <td class="cajaimagen">
                             <figure>
                                 <a href="mostrarcodigo/muestraEjercicio02.php"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
                             </figure>
@@ -176,12 +176,12 @@
                                 <a><figcaption class="titulofoto">7. Mostrar el nombre del fichero que se está ejecutando.</figcaption></a>
                             </figure>
                         </td>
-                        <td>
+                        <td class="cajaimagen">
                             <figure>
                                 <a href="codigoPHP/ejercicio07.php"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
                             </figure>
                         </td>
-                        <td>
+                        <td class="cajaimagen">
                             <figure>
                                 <a href="mostrarcodigo/muestraEjercicio07.php"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
                             </figure>
@@ -197,12 +197,12 @@
                                 <a><figcaption class="titulofoto">8. Mostrar la dirección IP del equipo desde el que estás accediendo.</figcaption></a>
                             </figure>
                         </td>
-                        <td>
+                        <td class="cajaimagen">
                             <figure>
                                 <a href="codigoPHP/ejercicio08.php"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
                             </figure>
                         </td>
-                        <td>
+                        <td class="cajaimagen">
                             <figure>
                                 <a href="mostrarcodigo/muestraEjercicio08.php"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
                             </figure>
@@ -218,12 +218,12 @@
                                 <a><figcaption class="titulofoto">9. Mostrar el path donde se encuentra el fichero que se está ejecutando.</figcaption></a>
                             </figure>
                         </td>
-                        <td>
+                        <td class="cajaimagen">
                             <figure>
                                 <a href="codigoPHP/ejercicio09.php"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
                             </figure>
                         </td>
-                        <td>
+                        <td class="cajaimagen">
                             <figure>
                                 <a href="mostrarcodigo/muestraEjercicio09.php"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
                             </figure>
@@ -239,12 +239,12 @@
                                 <a><figcaption class="titulofoto">10. Mostrar el contenido del fichero que se está ejecutando.</figcaption></a>
                             </figure>
                         </td>
-                        <td>
+                        <td class="cajaimagen">
                             <figure>
                                 <a href="codigoPHP/ejercicio10.php"><img src="webroot/css/img/play.png" class="imageplay" alt="Botonplay"/></a>
                             </figure>
                         </td>
-                        <td>
+                        <td class="cajaimagen">
                             <figure>
                                 <a href="mostrarcodigo/muestraEjercicio10.php"><img src="webroot/css/img/codigo.png" class="imagecodigo" alt="Botoncodigo"/></a>
                             </figure>
@@ -607,7 +607,7 @@
             <a href="../proyectoDWES/indexProyectoDWES.php"><img src="../proyectoTema3/webroot/css/img/atras.png" class="imageatras" alt="IconoAtras" /></a>
             <a href="https://github.com/AlbertoFRSauces/proyectoTema3" target="_blank"><img src="../proyectoTema3/webroot/css/img/github.png" class="imagegithub" alt="IconoGitHub" /></a>
             <p><a>&copy;</a>Alberto Fernández Ramírez 29/09/2021 Todos los derechos reservados.</p>
-            <p>Ultima actualización: 20/10/2021 10:59</p>
+            <p>Ultima actualización: 20/10/2021 20:29</p>
         </footer>
     </body>
 </html>

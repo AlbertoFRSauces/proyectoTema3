@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ejercicio 13</title>
+        <title>Ejercicio 14</title>
     </head>
     <body>
         <main>
@@ -12,15 +12,10 @@
             /*
              * @author: Alberto Fernandez Ramirez
              * @version: v1.Realizacion de ejercicio
-             * Created on: 20-octubre-2021
-             * Ejercicio 13. Crear una función que cuente el número de visitas a la página actual desde una fecha concreta.
+             * Created on: 18-octubre-2021
+             * Ejercicio 14. Comprobar las librerías que estás utilizando en tu entorno de desarrollo y explotación. 
+             * Crear tu propia librería de funciones y estudiar la forma de usarla en el entorno de desarrollo y en el de explotación.
              */
-
-            function visitas_pagina() {
-                
-            }
-
-            echo "Visitas totales a la pagina actual: " . visitas_pagina() . "</p>";
             ?>
         </main>
     </body>
