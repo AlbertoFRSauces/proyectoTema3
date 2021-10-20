@@ -9,7 +9,8 @@
 <body>
     <?php
         /* 
-            * Author: Alberto Fernandez Ramirez
+            * @author: Alberto Fernandez Ramirez
+            * @version: v1.Realizacion ejercicio
             * Created on: 14-octubre-2021
             * Ejercicio 5. Inicializar y mostrar una variable que tiene una marca de tiempo.(timestamp)
         */
@@ -17,8 +18,8 @@
         $timestamp= time();
         echo "<p>Marca de tiempo con time <strong>".$timestamp."</strong></p>";;
         //Mostrar la marca de tiempo obtenida con DateTime() y luego mostrada con un echo haciendo un getTimestamp().
-        $sFecha=new DateTime();
-        echo "<p>Marca de tiempo con timestamp <strong>".$sFecha->getTimestamp()."</strong></p>";
+        $oFecha=new DateTime();
+        echo "<p>Marca de tiempo con timestamp <strong>".$oFecha->getTimestamp()."</strong></p>";
     ?>
 </body>
 </html>

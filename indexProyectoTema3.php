@@ -607,7 +607,7 @@
             <a href="../proyectoDWES/indexProyectoDWES.php"><img src="../proyectoTema3/webroot/css/img/atras.png" class="imageatras" alt="IconoAtras" /></a>
             <a href="https://github.com/AlbertoFRSauces/proyectoTema3" target="_blank"><img src="../proyectoTema3/webroot/css/img/github.png" class="imagegithub" alt="IconoGitHub" /></a>
             <p><a>&copy;</a>Alberto Fernández Ramírez 29/09/2021 Todos los derechos reservados.</p>
-            <p>Ultima actualización: 18/10/2021 22:59</p>
+            <p>Ultima actualización: 20/10/2021 10:59</p>
         </footer>
     </body>
 </html>

@@ -51,14 +51,12 @@ header h1{
     float: right;
     width: 40px;
     height: 40px;
-    float: right;
 }
 .imagecodigo{
     margin-right: 3px;
     float: right;
     width: 34px;
     height: 34px;
-    float: right;
 }
 .imageatras{
     margin-left:5px;
@@ -84,12 +82,16 @@ header h1{
 .tabla{
     background-color:white;
     height: auto;
-    width: 1700px;
+    width: 900px;
 }
 table{
     border-collapse: collapse;
     margin-top: 15px;
-    margin-left: 5%;
+}
+.primerasfilas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .primerasfilas:last-child{
     margin-bottom: 75px;
@@ -97,11 +99,11 @@ table{
 .titulofoto{
     font-family: "Gotham-Medium";
     font-size:21px;
-    text-align:left;
+    text-align: left;
     background-color:white;
     color:#212121;
     padding: 15px;
-    width: 1630px;
+
 }
 .titulofoto:hover{
     font-family: "Gotham-Medium";
@@ -110,7 +112,6 @@ table{
     background-color:#212121;
     color:white;
     padding: 15px;
-    width: 1630px;
 }
 .tabla tr a{
     text-decoration:none;

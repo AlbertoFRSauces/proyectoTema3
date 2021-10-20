@@ -9,13 +9,18 @@
 <body>
     <?php
         /* 
-            * Author: Alberto Fernandez Ramirez
+            * @author: Alberto Fernandez Ramirez
+            * @version: v1.Realizacion ejercicio
             * Created on: 14-octubre-2021
-            * Ejercicio 4. Inicializar y mostrar una variable heredoc.
+            * Ejercicio 4. Mostrar en tu página index la fecha y hora actual en Oporto formateada en portugués. 
         */
-        date_default_timezone_set('Europe/Portugal');
-        $fechaActual = getdate();
-        print_r($fechaActual);
+        //Inicializar la variable $oFecha de tipo DateTime.
+        $oFechaEspana = new DateTime(null, new DateTimeZone('Europe/Madrid'));
+        $oFechaOporto = new DateTime(null, new DateTimeZone('Europe/Lisbon'));
+        //Mostrar el dia, mes anyo y hora actual en Oporto
+        echo '<p>Hoy es '.$oFechaOporto->format("d").' de '.$oFechaOporto->format("M").' de '.$oFechaOporto->format("Y").' y son las '.$oFechaOporto->format("H:i").' horas en Oporto</p>';
+        //Mostrar el dia, mes anyo y hora actual en España
+        echo '<p>Hoy es '.$oFechaEspana->format("d").' de '.$oFechaEspana->format("M").' de '.$oFechaEspana->format("Y").' y son las '.$oFechaEspana->format("H:i").' horas en España</p>';
     ?>
 </body>
 </html>
