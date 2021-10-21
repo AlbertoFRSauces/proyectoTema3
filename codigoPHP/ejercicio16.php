@@ -11,14 +11,30 @@
             <?php
             /*
              * @author: Alberto Fernandez Ramirez
-             * @version: v1.Realizacion de ejercicio
+             * @version: v2.Correcion del ejercicio
              * Created on: 20-octubre-2021
              * Ejercicio 16. Recorrer el array anterior utilizando funciones para obtener el mismo resultado.
              */
-            //Uso el include para poder usar el array del otro ejercicio aqui, si no uso el include no tengo acceso al array
-            include_once('ejercicio15.php');
-            //Recorro el array $aSueldoSemana creado en el ejercicio anterior con la funcion array_sum la cual me suma los valores del array
-            echo "<p>El sueldo percibido durante toda la semana es <strong>" . array_sum($aSueldoSemana) . "</strong></p>";
+            //Inicializo el array y defino cada elemento tanto la clave como su valor
+            $aSueldoSemana = array(
+                "Lunes" => 85.21,
+                "Martes" => 85.21,
+                "Miercoles" => 85.21,
+                "Jueves" => 85.21,
+                "Viernes" => 85.21,
+                "Sabado" => 125.59,
+                "Domingo" => 135.59
+            );
+            //Recorro el array con la funcion reset()
+            //Recorro el array con la funcion next()
+            //Recorro el array con la funcion prev()
+            //Recorro el array con la funcion end()
+            //Recorro el array con la funcion current()
+            //Recorro el array con la funcion key()
+            foreach ($aSueldoSemana as $value) {
+                echo $mykey = key($aSueldoSemana);
+            }
+            //Recorro el array con la funcion each()
             ?>
         </main>
     </body>
