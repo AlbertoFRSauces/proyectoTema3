@@ -8,7 +8,7 @@
     </head>
     <body>
         <header>
-            <h1>Formulario</h1>
+            <h1>Construir un formulario para recoger un cuestionario realizado a una persona y enviarlo a una página Tratamiento.php para que muestre las preguntas y las respuestas recogidas.</h1>
         </header>
         <main>
             <?php
