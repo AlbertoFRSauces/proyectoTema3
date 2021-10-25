@@ -18,7 +18,7 @@
              * Created on: 21-octubre-2021
              * Ejercicio 22. Construir un formulario para recoger un cuestionario realizado a una persona y mostrar en la misma página las preguntas y las respuestas recogidas. 
              */
-            //Creo el if necesario para poder pedir los datos y mostrarlos en la misma paginaa
+            //Creo el if necesario para poder pedir los datos y mostrarlos en la misma pagina
             if (isset($_REQUEST['enviar'])){
                 //Código que se ejecuta cuando se envía el formulario
                 //Creo las variables y les asigno el valor recogido en el formulario

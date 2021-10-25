@@ -19,7 +19,7 @@
              * Ejercicio 23. Construir un formulario para recoger un cuestionario realizado a una persona y mostrar en la misma página las preguntas y las respuestas recogidas; 
              * en el caso de que alguna respuesta esté vacía o errónea volverá a salir el formulario con el mensaje correspondiente. 
              */
-            //Creo el if necesario para poder pedir los datos y mostrarlos en la misma paginaa
+            //Creo el if necesario para poder pedir los datos y mostrarlos en la misma pagina
             if (!empty($_POST['nombre']) && !empty($_POST['apellidos'])){
                 //Código que se ejecuta cuando se envía el formulario
                 //Creo las variables y les asigno el valor recogido en el formulario

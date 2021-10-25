@@ -15,7 +15,7 @@
              * Created on: 20-octubre-2021
              * Ejercicio 16. Recorrer el array anterior utilizando funciones para obtener el mismo resultado.
              */
-            //Inicializo el array y defino cada elemento tanto la clave como su valorr
+            //Inicializo el array y defino cada elemento tanto la clave como su valor
             $aSueldoSemana = [
                 "Lunes" => 85.21,
                 "Martes" => 85.21,
