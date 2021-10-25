@@ -16,7 +16,7 @@
              * Ejercicio 16. Recorrer el array anterior utilizando funciones para obtener el mismo resultado.
              */
             //Inicializo el array y defino cada elemento tanto la clave como su valor
-            $aSueldoSemana = array(
+            $aSueldoSemana = [
                 "Lunes" => 85.21,
                 "Martes" => 85.21,
                 "Miercoles" => 85.21,
@@ -24,17 +24,17 @@
                 "Viernes" => 85.21,
                 "Sabado" => 125.59,
                 "Domingo" => 135.59
-            );
-            //Recorro el array con la funcion reset()
-            //Recorro el array con la funcion next()
-            //Recorro el array con la funcion prev()
-            //Recorro el array con la funcion end()
-            //Recorro el array con la funcion current()
-            //Recorro el array con la funcion key()
-            foreach ($aSueldoSemana as $value) {
-                echo $mykey = key($aSueldoSemana);
+            ];
+            //Poner puntero al principio del array
+            reset($aSueldoSemana);
+            while(key($aSueldoSemana)!=null){
+                //key devuelve el vamor clave donde se encuentre el puntero en el array
+                echo 'El dia de la semana es '.key($aSueldoSemana).'</br>';
+                //Current devuelve el valor donde se encuentra el puntero en el array
+                echo 'El sueldo de ese dia es '.current($aSueldoSemana).'€</br>';
+                //Avanzo el puntero una posicion dentro del array
+                next($aSueldoSemana);
             }
-            //Recorro el array con la funcion each()
             ?>
         </main>
     </body>
