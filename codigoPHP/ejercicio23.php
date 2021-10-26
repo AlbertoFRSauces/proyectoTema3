@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../webroot/css/estiloejercicio.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="../webroot/css/img/home.png" type="image/x-icon">
         <title>Ejercicio 23</title>
     </head>
     <body>
@@ -14,7 +16,7 @@
             <?php
             /*
              * @author: Alberto Fernandez Ramirez
-             * @version: v2.Correcion de ejercicio
+             * @version: v2.Correcion del ejercicio
              * Created on: 21-octubre-2021
              * Ejercicio 23. Construir un formulario para recoger un cuestionario realizado a una persona y mostrar en la misma página las preguntas y las respuestas recogidas; 
              * en el caso de que alguna respuesta esté vacía o errónea volverá a salir el formulario con el mensaje correspondiente. 
@@ -32,7 +34,7 @@
                 //Muestro el contenido de la variable apellidos con print_r
                 print_r('Los apellidos son: ' . $apellidos);
                 echo '<br>';
-
+                echo '<br>';
                 //Muestro con print_r el contenido de la variable $_REQUEST
                 echo '<p>El contenido de $_REQUEST es:</p>';
                 echo '<pre>';
@@ -55,24 +57,30 @@
             ?> 
                 <form name="input" action="<?php echo $_SERVER['PHP_SELF']?>" method="post">
                     <p><strong>Nombre y Apellidos</strong></p>
-                    <p>Su nombre: <input type="text" name="nombre"/></p>
-                        <?php
+                    <?php
+                        echo 'Su nombre: <input type="text" name="nombre"/>';
                         if (isset($_POST['enviar']) && empty($_POST['nombre'])){
                             echo "<span style='color:red'> Debe introducir un nombre!</span>";
                         }
-                        ?>
-                    <p>Sus apellidos: <input type="text" name="apellidos"/></p>
-                        <?php 
+                        echo '<br>';
+                    ?>
+                    <?php
+                        echo 'Sus apellidos: <input type="text" name="apellidos"/>';
                         if (isset($_POST['enviar']) && empty($_POST['apellidos'])){
                             echo "<span style='color:red'> Debe introducir los apellidos!</span>";
                         }
-                        ?>
+                    ?>
                     <p><input type="submit" value="Enviar" name="enviar"/></p>
                 </form>
             <?php
                 }
             ?>
         </main>
+        <footer class="piepagina">
+            <a href="https://github.com/AlbertoFRSauces/proyectoTema3" target="_blank"><img src="../webroot/css/img/github.png" class="imagegithub" alt="IconoGitHub" /></a>
+            <p><a>&copy;</a>Alberto Fernández Ramírez 29/09/2021 Todos los derechos reservados.</p>
+            <p>Ultima actualización: 26/10/2021 22:00</p>
+        </footer>
     </body>
 </html>
 
