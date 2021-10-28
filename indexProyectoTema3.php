@@ -10,7 +10,7 @@
         <meta name="keywords" content="analítica web, seo, web semántica, seo semántico, analytics" >
         <meta name="robots" content="index, follow">
         <link href="webroot/css/estilo.css" rel="stylesheet" type="text/css">
-        <link rel="icon" href="../img/home.png" type="image/x-icon">
+        <link rel="icon" href="../proyectoTema3/webroot/css/img/home.png" type="image/x-icon">
     </head>
     <body>
         <header>
@@ -607,7 +607,7 @@
             <a href="../proyectoDWES/indexProyectoDWES.php"><img src="../proyectoTema3/webroot/css/img/atras.png" class="imageatras" alt="IconoAtras" /></a>
             <a href="https://github.com/AlbertoFRSauces/proyectoTema3" target="_blank"><img src="../proyectoTema3/webroot/css/img/github.png" class="imagegithub" alt="IconoGitHub" /></a>
             <p><a>&copy;</a>Alberto Fernández Ramírez 29/09/2021 Todos los derechos reservados.</p>
-            <p>Ultima actualización: 21/10/2021 19:47</p>
+            <p>Ultima actualización: 24/10/2021 23:00</p>
         </footer>
     </body>
 </html>

@@ -14,7 +14,7 @@
     </head>
     <body>
     <?php
-        highlight_file("../codigoPHP/ejercicio19.php");
+        highlight_file("../core/210322ValidacionFormularios.php");
     ?>
     </body>
 </html>

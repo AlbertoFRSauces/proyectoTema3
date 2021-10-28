@@ -10,7 +10,7 @@
         <meta name="keywords" content="analítica web, seo, web semántica, seo semántico, analytics" >
         <meta name="robots" content="index, follow">
         <link href="webroot/css/estilo.css" rel="stylesheet" type="text/css">
-        <link rel="icon" href="../img/home.png" type="image/x-icon">
+        <link rel="icon" href="../proyectoTema3/webroot/css/img/home.png" type="image/x-icon">
     </head>
     <body>
     <?php
