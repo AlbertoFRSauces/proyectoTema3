@@ -42,6 +42,9 @@
             .sexo{
                 width: 30px;
             }
+            .smartphone{
+                width: 30px;
+            }
             div input{
                 width: 250px;
             }
@@ -116,9 +119,7 @@
                 'edad' => null,
                 'calle' => null,
                 'altura' => null,
-                'boleano' => null,
                 'fecha' => null,
-                'momento_fecha_hora' => null,
                 'descripcion' => null,
                 'url' => null,
                 'dni' => null,
@@ -134,9 +135,7 @@
                 'edad' => null,
                 'calle' => null,
                 'altura' => null,
-                'boleano' => null,
                 'fecha' => null,
-                'momento_fecha_hora' => null,
                 'descripcion' => null,
                 'url' => null,
                 'dni' => null,
@@ -157,12 +156,8 @@
                 $aErrores['calle'] = validacionFormularios::comprobarAlfaNumerico($_REQUEST['calle'], TAMANYO_MAXIMO_CALLE, TAMANYO_MINIMO_CALLE, OBLIGATORIO);
                 //Comprobar si el campo altura esta bien rellenado
                 $aErrores['altura'] = validacionFormularios::comprobarFloat($_REQUEST['altura'], TAMANYO_MAXIMO_ALTURA, TAMANYO_MINIMO_ALTURA, OBLIGATORIO);
-                //Comprobar si el campo boleano esta bien rellenado
-                //$aErrores[''] = validacionFormularios::
                 //Comprobar si el campo fecha esta bien rellenado
                 $aErrores['fecha'] = validacionFormularios::validarFecha($_REQUEST['fecha'], FECHA_MAXIMA, FECHA_MINIMA, OBLIGATORIO);
-                //Comprobar si el campo momento_fecha_hora esta bien rellenado
-                //$aErrores[''] = validacionFormularios::
                 //Comprobar si el campo descripcion esta bien rellenado
                 $aErrores['descripcion'] = validacionFormularios::comprobarMaxTamanio($_REQUEST['descripcion'], TAMANO_MAXIMO_DESCRIPCION);
                 //Comprobar si el campo url esta bien rellenado
@@ -174,10 +169,17 @@
                 //Comprobar si el campo telefono esta bien rellenado
                 $aErrores['telefono'] = validacionFormularios::validarTelefono($_REQUEST['telefono'], OBLIGATORIO);
                 //Comprobar si el campo sexo esta bien rellenado
-                //$aErrores['sexo'] = validacionFormularios::validarElementoEnLista($_REQUEST['sexo'], $aRadioOpciones);
-                $aErrores['sexo'] = validacionFormularios::comprobarNoVacio($_REQUEST['sexo']);
+                if(isset($_REQUEST['sexo'])){
+                    $aErrores['sexo'] = validacionFormularios::validarElementoEnLista($_REQUEST['sexo'], $aRadioOpciones);
+                }else{
+                    $aErrores['sexo'] = validacionFormularios::validarElementoEnLista(null, $aRadioOpciones);
+                }
                 //Comprobar si el campo dispositivo esta bien rellenado
-                //$aErrores['smartphone'] = validacionFormularios::validarElementoEnLista($_REQUEST['smartphone'], $aCheckboxOpciones);
+                if(isset($_REQUEST['smartphone'])){
+                    $aErrores['smartphone'] = validacionFormularios::validarArrayPorArray($_REQUEST['smartphone'], $aCheckboxOpciones);
+                }else{
+                    $aErrores['smartphone'] = "No se ha seleccionado ninguna opcion.";
+                }
                 //Comprobar si el campo idioma esta bien rellenado
                 $aErrores['idioma'] = validacionFormularios::validarElementoEnLista($_REQUEST['idioma'], $aListaOpciones);
                 //Comprobar si algun campo del array de errores ha sido rellenado
@@ -201,16 +203,14 @@
                     'edad' => $_REQUEST['edad'],
                     'calle' => $_REQUEST['calle'],
                     'altura' => $_REQUEST['altura'],
-                    //'boleano' => $_REQUEST['boleano'],
                     'fecha' => $_REQUEST['fecha'],
-                    //'momento_fecha_hora' => $_REQUEST['momento_fecha_hora'],
                     'descripcion' => $_REQUEST['descripcion'],
                     'url' => $_REQUEST['url'],
                     'dni' => $_REQUEST['dni'],
                     'codigoPostal' => $_REQUEST['codigoPostal'],
                     'telefono' => $_REQUEST['telefono'],
                     'sexo' => $_REQUEST['sexo'],
-                    //'dispositivo' => $_REQUEST['smartphone'],
+                    'smartphone' => $_REQUEST['smartphone'],
                     'idioma' => $_REQUEST['idioma']
                 ];
 
@@ -219,16 +219,17 @@
                 echo 'La edad es: ' . $aRespuestas['edad'] . '<br>';
                 echo 'La calle es: ' . $aRespuestas['calle'] . '<br>';
                 echo 'La altura es: ' . $aRespuestas['altura'] . '<br>';
-                //echo 'booleano';
                 echo 'La fecha es: ' . $aRespuestas['fecha'] . '<br>';
-                //echo 'momento fecha ';
                 echo 'Descripción: ' . $aRespuestas['descripcion'] . '<br>';
                 echo 'La URL es: ' . $aRespuestas['url'] . '</br>';
                 echo 'El dni es: ' . $aRespuestas['dni'] . '<br>';
                 echo 'El codigo postal es: ' . $aRespuestas['codigoPostal'] . '<br>';
                 echo 'El telefono es: ' . $aRespuestas['telefono'] . '<br>';
                 echo 'El sexo es: ' . $aRespuestas['sexo'] . '<br>';
-                //echo 'Usa un smartphone: ' . $aRespuestas['smartphone'] . '<br>';
+                echo 'Usa un smartphone: ';
+                foreach ($aRespuestas['smartphone'] as $value) {
+                    echo $value . '<br>';
+                }
                 echo 'El idioma es: ' . $aRespuestas['idioma'] . '<br>';
                 echo '<br>';
                 
@@ -259,16 +260,16 @@
                                     <label for="nombre"><strong>Nombre</strong></label>
                                 </div>
                                 <div>
-                                    <input name="nombre" type="text" value="<?php echo isset($_REQUEST['nombre']) ? $_REQUEST['nombre'] : ''; ?>" placeholder="Introduzca su nombre">
+                                    <input name="nombre" id="nombre" type="text" value="<?php echo isset($_REQUEST['nombre']) ? $_REQUEST['nombre'] : ''; ?>" placeholder="Introduzca su nombre">
                                     <?php echo '<span>' . $aErrores['nombre'] . '</span>' ?>
                                 </div>
                             </li>
                             <li>
                                 <div>
-                                    <label for="calle"><strong>Edad</strong></label>
+                                    <label for="edad"><strong>Edad</strong></label>
                                 </div>
                                 <div>
-                                    <input name="edad" type="text" value="<?php echo isset($_REQUEST['edad']) ? $_REQUEST['edad'] : ''?>" placeholder="Introduzca su edad">
+                                    <input name="edad" id="edad" type="text" value="<?php echo isset($_REQUEST['edad']) ? $_REQUEST['edad'] : ''?>" placeholder="Introduzca su edad">
                                     <?php echo '<span>' . $aErrores['edad'] . '</span>' ?>
                                 </div>
                             </li>
@@ -277,7 +278,7 @@
                                     <label for="calle"><strong>Calle</strong></label>
                                 </div>
                                 <div>
-                                    <input name="calle" type="text" value="<?php echo isset($_REQUEST['calle']) ? $_REQUEST['calle'] : ''?>" placeholder="Introduzca calle y numero">
+                                    <input name="calle" id="calle" type="text" value="<?php echo isset($_REQUEST['calle']) ? $_REQUEST['calle'] : ''?>" placeholder="Introduzca calle y numero">
                                     <?php echo '<span>' . $aErrores['calle'] . '</span>' ?>
                                 </div>
                             </li>
@@ -286,16 +287,8 @@
                                     <label for="altura"><strong>Altura</strong></label>
                                 </div>
                                 <div>
-                                    <input name="altura" type="text" value="<?php echo isset($_REQUEST['altura']) ? $_REQUEST['altura'] : ''?>" placeholder="Introduzca su altura">
+                                    <input name="altura" id="altura" type="text" value="<?php echo isset($_REQUEST['altura']) ? $_REQUEST['altura'] : ''?>" placeholder="Introduzca su altura">
                                     <?php echo '<span>' . $aErrores['altura'] . '</span>' ?>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <label for="boleano"><strong>Boleano</strong></label>
-                                </div>
-                                <div>
-                                    
                                 </div>
                             </li>
                             <li>
@@ -303,17 +296,9 @@
                                     <label for="fecha"><strong>Fecha</strong></label>
                                 </div>
                                 <div>
-                                    <input name="fecha" type="text" value="<?php echo isset($_REQUEST['fecha']) ? $_REQUEST['fecha'] : ''?>" placeholder="Introduzca la fecha">
+                                    <input name="fecha" id="fecha" type="text" value="<?php echo isset($_REQUEST['fecha']) ? $_REQUEST['fecha'] : ''?>" placeholder="Introduzca la fecha">
                                     <?php echo '<span>' . $aErrores['fecha'] . '</span>' ?>
                                     <p class="ayuda">El formato debe ser DD/MM/AAAA<p>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <label for="momento_fecha_hora"><strong>Momento fecha hora</strong></label>
-                                </div>
-                                <div>
-                                    
                                 </div>
                             </li>
                             <li>
@@ -359,7 +344,7 @@
                                     <label for="telefono"><strong>Telefono</strong></label>
                                 </div>
                                 <div>
-                                    <input name="telefono" type="text" value="<?php echo isset($_REQUEST['telefono']) ? $_REQUEST['telefono'] : ''?>" placeholder="Introduzca su telefono">
+                                    <input name="telefono" id="telefono" type="text" value="<?php echo isset($_REQUEST['telefono']) ? $_REQUEST['telefono'] : ''?>" placeholder="Introduzca su telefono">
                                     <?php echo '<span>' . $aErrores['telefono'] . '</span>'?>
                                 </div>
                             </li>
@@ -369,27 +354,33 @@
                                 </div>
                                 <div>
                                     <label for="Masculino">
-                                        <input class="sexo" type="radio" name="sexo" value="
-                                            <?php if (isset($_REQUEST['sexo']) === 'Masculino') {echo "checked";}?>">Masculino
+                                        <input class="sexo" id="masculino" type="radio" name="sexo" value="Masculino"
+                                            <?php if (isset($_REQUEST['sexo']) && $_REQUEST['sexo'] == 'Masculino') {echo "checked";}?>>Masculino
                                     </label>
                                     <label for="Femenino">
-                                        <input class="sexo" type="radio" name="sexo" value="
-                                            <?php if (isset($_REQUEST['sexo']) === 'Femenino') {echo "checked";}?>">Femenino
+                                        <input class="sexo" id="femenino" type="radio" name="sexo" value="Femenino"
+                                            <?php if (isset($_REQUEST['sexo']) && $_REQUEST['sexo']  == 'Femenino') {echo "checked";}?>>Femenino
                                     </label>
                                     <label for="Otro">
-                                        <input class="sexo" type="radio" name="sexo" value="
-                                            <?php if (isset($_REQUEST['sexo']) === 'Otro') {echo "checked";}?>">Otro
+                                        <input class="sexo" id="otro" type="radio" name="sexo" value="Otro"
+                                            <?php if (isset($_REQUEST['sexo']) && $_REQUEST['sexo']  == 'Otro') {echo "checked";}?>>Otro
                                     </label>
                                     <?php echo '<span>' . $aErrores['sexo'] . '</span>'?>
                                 </div>
-                                
                             </li>
                             <li>
                                 <div>
                                     <label for="smartphone"><strong>Usa usted un smartphone</strong></label>
                                 </div>
                                 <div>
-                                    
+                                    <label for="Si">
+                                        <input class="smartphone" type="checkbox" name="smartphone[]" id="Si" value="Si" 
+                                        <?php if (!empty($_REQUEST['smartphone'])) {
+                                            if (in_array('Si', $_REQUEST['smartphone'])) {echo "checked";}}?>>Si</label>
+                                    <label for="No">
+                                        <input class="smartphone" type="checkbox" name="smartphone[]" id="No" value="No" 
+                                        <?php if (!empty($_REQUEST['smartphone'])) {
+                                            if (in_array('No', $_REQUEST['smartphone'])) {echo "checked";}}?>>No</label>
                                 </div>
                             </li>
                             <li>
@@ -398,7 +389,7 @@
                                 </div>
                                 <div>
                                     <select name="idioma" value="<?php if (isset($_REQUEST['idioma'])) {echo $_REQUEST['idioma'];}?>">
-                                        <option value=null></option>
+                                        <option value="null">Elija un idioma</option>
                                         <option value="Espanol">Espanol</option>
                                         <option value="Portugues">Portugues</option>
                                     </select>
@@ -406,7 +397,7 @@
                                 </div>
                             </li>
                             <li>
-                                <input class="enviar" type="submit" name="enviar" value="Enviar"/>
+                                <input class="enviar" id="enviar" type="submit" name="enviar" value="Enviar"/>
                             </li>
                         </ul>
                     </fieldset>
@@ -418,7 +409,7 @@
         <footer class="piepagina">
             <a href="https://github.com/AlbertoFRSauces/proyectoTema3" target="_blank"><img src="../webroot/css/img/github.png" class="imagegithub" alt="IconoGitHub" /></a>
             <p><a>&copy;</a>Alberto Fernández Ramírez 29/09/2021 Todos los derechos reservados.</p>
-            <p>Ultima actualización: 26/10/2021 23:00</p>
+            <p>Ultima actualización: 28/10/2021 23:00</p>
         </footer>
     </body>
 </html>
