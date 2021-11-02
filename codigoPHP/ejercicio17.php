@@ -45,9 +45,9 @@
             $contador = 0;
             foreach ($aTeatro as $fila) {
                 $contador++;
-                foreach ($fila as $columna  => $value) {
-                    if(isset($value)){
-                        echo 'El asiento <strong>' . $contador . 'F ' . $columna. 'C</strong> esta ocupado por <strong>' . $value . '</strong><br>';
+                foreach ($fila as $columna  => $persona) {
+                    if(isset($persona)){
+                        echo 'El asiento <strong>' . $contador . 'F ' . $columna. 'C</strong> esta ocupado por <strong>' . $persona . '</strong><br>';
                     }
                 }
             }

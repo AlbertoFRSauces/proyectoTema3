@@ -211,7 +211,7 @@
                 if(isset($_REQUEST['checkboxObligatorio'])){
                     $aErrores['checkboxObligatorio'] = validacionFormularios::validarArrayPorArray($_REQUEST['checkboxObligatorio'], $aCheckboxOpciones);
                 }else{
-                    $aErrores['checkboxObligatorio'] = validacionFormularios::validarArrayPorArray(null, $aCheckboxOpciones);
+                    $aErrores['checkboxObligatorio'] = "Debes selecionar un valor";
                 }
                 //Comprobar si el campo listaDesplegable esta bien rellenado
                 $aErrores['listaDesplegableObligatorio'] = validacionFormularios::validarElementoEnLista($_REQUEST['listaDesplegableObligatorio'], $aListaOpciones);
@@ -282,7 +282,7 @@
                 echo 'El radiobutton obligatorio es: ' . $aRespuestas['radiobuttonObligatorio'] . '<br>';
                 echo 'El checkbox obligatorio es: ';
                 foreach ($aRespuestas['checkboxObligatorio'] as $value) {
-                    echo $Value . '<br>';
+                    echo $value . '<br>';
                 }
                 echo 'La lista desplegable obligatoria es: ' . $aRespuestas['listaDesplegableObligatorio'] . '<br>';
                 echo '<br>';
@@ -302,6 +302,9 @@
                 echo '<pre>';
                 print_r($_POST);
                 echo '</pre>';
+                echo '<br>';
+                echo '<br>';
+                echo '<br>';
             } else {
                 //Código que se ejecuta antes de rellenar el formulario
                 ?> 
@@ -312,7 +315,7 @@
                             <!--Campo Alfabetico Obligatorio -->
                             <li>
                                 <div>
-                                    <label for="alfabeticoObligatorio"><strong>Alfabetico Obligatorio</strong></label>
+                                    <label for="alfabeticoObligatorio"><strong>Alfabetico Obligatorio*</strong></label>
                                     <input name="alfabeticoObligatorio" id="alfabeticoObligatorio" type="text" value="<?php echo isset($_REQUEST['alfabeticoObligatorio']) ? $_REQUEST['alfabeticoObligatorio'] : ''; ?>" placeholder="Introduzca alfabetico obligatorio">
                                     <?php echo '<span>' . $aErrores['alfabeticoObligatorio'] . '</span>' ?>
                                 </div>
@@ -328,7 +331,7 @@
                             <!--Campo Alfanumerico Obligatorio -->
                             <li>
                                 <div>
-                                    <label for="alfanumericoObligatorio"><strong>Alfanumerico Obligatorio</strong></label>
+                                    <label for="alfanumericoObligatorio"><strong>Alfanumerico Obligatorio*</strong></label>
                                     <input name="alfanumericoObligatorio" id="alfanumericoObligatorio" type="text" value="<?php echo isset($_REQUEST['alfanumericoObligatorio']) ? $_REQUEST['alfanumericoObligatorio'] : ''?>" placeholder="Introduzca alfanumerico obligatorio">
                                     <?php echo '<span>' . $aErrores['alfanumericoObligatorio'] . '</span>' ?>
                                 </div>
@@ -344,7 +347,7 @@
                             <!--Campo Entero Obligatorio-->
                             <li>
                                 <div>
-                                    <label for="enteroObligatorio"><strong>Entero Obligatorio</strong></label>
+                                    <label for="enteroObligatorio"><strong>Entero Obligatorio*</strong></label>
                                     <input name="enteroObligatorio" id="enteroObligatorio" type="text" value="<?php echo isset($_REQUEST['enteroObligatorio']) ? $_REQUEST['enteroObligatorio'] : ''?>" placeholder="Introduzca entero obligatorio">
                                     <?php echo '<span>' . $aErrores['enteroObligatorio'] . '</span>' ?>
                                 </div>
@@ -360,7 +363,7 @@
                             <!--Campo Float Obligatorio-->
                             <li>
                                 <div>
-                                    <label for="floatObligatorio"><strong>Float Obligatorio</strong></label>
+                                    <label for="floatObligatorio"><strong>Float Obligatorio*</strong></label>
                                     <input name="floatObligatorio" id="floatObligatorio" type="text" value="<?php echo isset($_REQUEST['floatObligatorio']) ? $_REQUEST['floatObligatorio'] : ''?>" placeholder="Introduzca Float Obligatorio">
                                     <?php echo '<span>' . $aErrores['floatObligatorio'] . '</span>' ?>
                                 </div>
@@ -376,7 +379,7 @@
                             <!--Campo Fecha Obligatorio-->
                             <li>
                                 <div>
-                                    <label for="fechaObligatorio"><strong>Fecha Obligatoria</strong></label>
+                                    <label for="fechaObligatorio"><strong>Fecha Obligatoria*</strong></label>
                                     <input name="fechaObligatorio" id="fechaObligatorio" type="text" value="<?php echo isset($_REQUEST['fechaObligatorio']) ? $_REQUEST['fechaObligatorio'] : ''?>" placeholder="Introduzca Fecha Obligatoria">
                                     <?php echo '<span>' . $aErrores['fechaObligatorio'] . '</span>' ?>
                                     <p class="ayuda">El formato debe ser DD/MM/AAAA<p>
@@ -394,7 +397,7 @@
                             <!--Campo AreaTexto Obligatorio-->
                             <li>
                                 <div>
-                                    <label for="areaTextoObligatorio"><strong>AreaTexto Obligatoria</strong></label>
+                                    <label for="areaTextoObligatorio"><strong>AreaTexto Obligatoria*</strong></label>
                                     <textarea name="areaTextoObligatorio" rows="4" cols="29">AreaTexto Obligatoria</textarea>
                                     <?php echo '<span>' . $aErrores['areaTextoObligatorio'] . '</span>' ?>
                                     <p class="ayuda">Los caracteres maximos son 255.<p>
@@ -412,7 +415,7 @@
                             <!--Campo URL Obligatorio-->
                             <li>
                                 <div>
-                                    <label for="urlObligatorio"><strong>URL Obligatorio</strong></label>
+                                    <label for="urlObligatorio"><strong>URL Obligatorio*</strong></label>
                                     <input name="urlObligatorio" id="urlObligatorio" type="text" value="<?php echo isset($_REQUEST['urlObligatorio']) ? $_REQUEST['urlObligatorio'] : ''?>" placeholder="URL Obligatorio">
                                     <?php echo '<span>' . $aErrores['urlObligatorio'] . '</span>'?>
                                     <p class="ayuda">El formato debe ser https://www.URLObligatorio.com<p>
@@ -430,7 +433,7 @@
                             <!--Campo DNI Obligatorio-->
                             <li>
                                 <div>
-                                    <label for="dniObligatorio"><strong>DNI Obligatorio</strong></label>
+                                    <label for="dniObligatorio"><strong>DNI Obligatorio*</strong></label>
                                     <input name="dniObligatorio" type="text" value="<?php echo isset($_REQUEST['dniObligatorio']) ? $_REQUEST['dniObligatorio'] : ''?>" placeholder="DNI Obligatorio">
                                     <?php echo '<span>' . $aErrores['dniObligatorio'] . '</span>'?>
                                 </div>
@@ -446,7 +449,7 @@
                             <!--Campo CodigoPostal Obligatorio-->
                             <li>
                                 <div>
-                                    <label for="codigoPostalObligatorio"><strong>Codigo Postal Obligatorio</strong></label>
+                                    <label for="codigoPostalObligatorio"><strong>Codigo Postal Obligatorio*</strong></label>
                                     <input name="codigoPostalObligatorio" type="text" value="<?php echo isset($_REQUEST['codigoPostalObligatorio']) ? $_REQUEST['codigoPostalObligatorio'] : ''?>" placeholder="Codigo Postal Obligatorio">
                                     <?php echo '<span>' . $aErrores['codigoPostalObligatorio'] . '</span>'?>
                                 </div>
@@ -462,7 +465,7 @@
                             <!--Campo Telefono Obligatorio-->
                             <li>
                                 <div>
-                                    <label for="telefonoObligatorio"><strong>Telefono Obligatorio</strong></label>
+                                    <label for="telefonoObligatorio"><strong>Telefono Obligatorio*</strong></label>
                                     <input name="telefonoObligatorio" id="telefonoObligatorio" type="text" value="<?php echo isset($_REQUEST['telefonoObligatorio']) ? $_REQUEST['telefonoObligatorio'] : ''?>" placeholder="Telefono Obligatorio">
                                     <?php echo '<span>' . $aErrores['telefonoObligatorio'] . '</span>'?>
                                 </div>
@@ -478,15 +481,15 @@
                             <!--Campo Radiobutton Obligatorio-->
                             <li>
                                 <div>
-                                    <label for="radiobuttonObligatorio"><strong>Radiobutton Obligatorio</strong></label>
+                                    <label for="radiobuttonObligatorio"><strong>Radiobutton Obligatorio*</strong></label>
                                     <label for="OpcionRadio1">
-                                        <input class="radiobuttonObligatorio" id="OpcionRadio1" type="radio" name="OpcionRadio1" value="OpcionRadio1"
+                                        <input class="radiobuttonObligatorio" id="opcionRadio1" type="radio" name="radiobuttonObligatorio" value="OpcionRadio1"
                                             <?php if (isset($_REQUEST['radiobuttonObligatorio']) && $_REQUEST['radiobuttonObligatorio'] == 'OpcionRadio1') {echo "checked";}?>>OpcionRadio1</label>
                                     <label for="OpcionRadio2">
-                                        <input class="radiobuttonObligatorio" id="OpcionRadio2" type="radio" name="OpcionRadio2" value="OpcionRadio2"
+                                        <input class="radiobuttonObligatorio" id="opcionRadio2" type="radio" name="radiobuttonObligatorio" value="OpcionRadio2"
                                             <?php if (isset($_REQUEST['radiobuttonObligatorio']) && $_REQUEST['radiobuttonObligatorio']  == 'OpcionRadio2') {echo "checked";}?>>OpcionRadio2</label>
                                     <label for="OpcionRadio3">
-                                        <input class="radiobuttonObligatorio" id="OpcionRadio3" type="radio" name="OpcionRadio3" value="OpcionRadio3"
+                                        <input class="radiobuttonObligatorio" id="opcionRadio3" type="radio" name="radiobuttonObligatorio" value="OpcionRadio3"
                                             <?php if (isset($_REQUEST['radiobuttonObligatorio']) && $_REQUEST['radiobuttonObligatorio']  == 'OpcionRadio3') {echo "checked";}?>>OpcionRadio3</label>
                                     <?php echo '<span>' . $aErrores['radiobuttonObligatorio'] . '</span>'?>
                                 </div>
@@ -495,24 +498,24 @@
                             <li>
                                 <div>
                                     <label for="checkboxObligatorio"><strong>Checkbox Obligatorio</strong></label>
-                                    <label for="OpcionCheckbox1">
-                                    <input class="checkboxObligatorio" type="checkbox" name="checkboxObligatorio[]" id="OpcionCheckbox1" value="OpcionCheckbox1" 
+                                    
+                                    <input class="checkboxObligatorio" id="OpcionCheckbox1" type="checkbox" name="checkboxObligatorio[]"  value="OpcionCheckbox1" 
                                         <?php if (!empty($_REQUEST['checkboxObligatorio'])){
                                             if (in_array('OpcionCheckbox1', $_REQUEST['checkboxObligatorio'])) {echo "checked";}
                                         }
-                                        ?>>OpcionCheckbox1</label>
-                                    <label for="OpcionCheckbox2">
-                                    <input class="checkboxObligatorio" type="checkbox" name="checkboxObligatorio[]" id="OpcionCheckbox2" value="OpcionCheckbox2" 
+                                        ?>><label for="OpcionCheckbox1">OpcionCheckbox1</label>
+                                    
+                                    <input class="checkboxObligatorio" id="OpcionCheckbox2" type="checkbox" name="checkboxObligatorio[]"  value="OpcionCheckbox2" 
                                         <?php if (!empty($_REQUEST['checkboxObligatorio'])){
                                             if (in_array('OpcionCheckbox2', $_REQUEST['checkboxObligatorio'])) {echo "checked";}
                                         }
-                                        ?>>OpcionCheckbox2</label>
+                                        ?>><label for="OpcionCheckbox2">OpcionCheckbox2</label>
                                 </div>
                             </li>
                             <!--Campo ListaDesplegable Obligatorio-->
                             <li>
                                 <div>
-                                    <label for="listaDesplegableObligatorio"><strong>Lista Desplegable Obligatoria</strong></label>
+                                    <label for="listaDesplegableObligatorio"><strong>Lista Desplegable Obligatoria*</strong></label>
                                     <select name="listaDesplegableObligatorio" value="<?php if (isset($_REQUEST['listaDesplegableObligatorio'])) {echo $_REQUEST['listaDesplegableObligatorio'];}?>">
                                         <option value="null">Elija una opcion</option>
                                         <option value="OpcionLista1">OpcionLista1</option>

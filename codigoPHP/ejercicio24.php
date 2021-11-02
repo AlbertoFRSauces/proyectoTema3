@@ -257,7 +257,7 @@
                         <ul>
                             <li>
                                 <div>
-                                    <label for="nombre"><strong>Nombre</strong></label>
+                                    <label for="nombre"><strong>Nombre*</strong></label>
                                 </div>
                                 <div>
                                     <input name="nombre" id="nombre" type="text" value="<?php echo isset($_REQUEST['nombre']) ? $_REQUEST['nombre'] : ''; ?>" placeholder="Introduzca su nombre">
@@ -266,7 +266,7 @@
                             </li>
                             <li>
                                 <div>
-                                    <label for="edad"><strong>Edad</strong></label>
+                                    <label for="edad"><strong>Edad*</strong></label>
                                 </div>
                                 <div>
                                     <input name="edad" id="edad" type="text" value="<?php echo isset($_REQUEST['edad']) ? $_REQUEST['edad'] : ''?>" placeholder="Introduzca su edad">
@@ -275,7 +275,7 @@
                             </li>
                             <li>
                                 <div>
-                                    <label for="calle"><strong>Calle</strong></label>
+                                    <label for="calle"><strong>Calle*</strong></label>
                                 </div>
                                 <div>
                                     <input name="calle" id="calle" type="text" value="<?php echo isset($_REQUEST['calle']) ? $_REQUEST['calle'] : ''?>" placeholder="Introduzca calle y numero">
@@ -284,7 +284,7 @@
                             </li>
                             <li>
                                 <div>
-                                    <label for="altura"><strong>Altura</strong></label>
+                                    <label for="altura"><strong>Altura*</strong></label>
                                 </div>
                                 <div>
                                     <input name="altura" id="altura" type="text" value="<?php echo isset($_REQUEST['altura']) ? $_REQUEST['altura'] : ''?>" placeholder="Introduzca su altura">
@@ -293,7 +293,7 @@
                             </li>
                             <li>
                                 <div>
-                                    <label for="fecha"><strong>Fecha</strong></label>
+                                    <label for="fecha"><strong>Fecha*</strong></label>
                                 </div>
                                 <div>
                                     <input name="fecha" id="fecha" type="text" value="<?php echo isset($_REQUEST['fecha']) ? $_REQUEST['fecha'] : ''?>" placeholder="Introduzca la fecha">
@@ -313,7 +313,7 @@
                             </li>
                             <li>
                                 <div>
-                                    <label for="url"><strong>URL</strong></label>
+                                    <label for="url"><strong>URL*</strong></label>
                                 </div>
                                 <div>
                                     <input name="url" type="text" value="<?php echo isset($_REQUEST['url']) ? $_REQUEST['url'] : ''?>" placeholder="Introduce tu URL">
@@ -323,7 +323,7 @@
                             </li>
                             <li>
                                 <div>
-                                    <label for="dni"><strong>DNI</strong></label>
+                                    <label for="dni"><strong>DNI*</strong></label>
                                 </div>
                                 <div>
                                     <input name="dni" type="text" value="<?php echo isset($_REQUEST['dni']) ? $_REQUEST['dni'] : ''?>" placeholder="Introduzca su DNI">
@@ -332,7 +332,7 @@
                             </li>
                             <li>
                                 <div>
-                                    <label for="codigoPostal"><strong>Codigo Postal</strong></label>
+                                    <label for="codigoPostal"><strong>Codigo Postal*</strong></label>
                                 </div>
                                 <div>
                                     <input name="codigoPostal" type="text" value="<?php echo isset($_REQUEST['codigoPostal']) ? $_REQUEST['codigoPostal'] : ''?>" placeholder="Introduzca su codigo postal">
@@ -341,7 +341,7 @@
                             </li>
                             <li>
                                 <div>
-                                    <label for="telefono"><strong>Telefono</strong></label>
+                                    <label for="telefono"><strong>Telefono*</strong></label>
                                 </div>
                                 <div>
                                     <input name="telefono" id="telefono" type="text" value="<?php echo isset($_REQUEST['telefono']) ? $_REQUEST['telefono'] : ''?>" placeholder="Introduzca su telefono">
@@ -350,7 +350,7 @@
                             </li>
                             <li>
                                 <div>
-                                    <label for="sexo"><strong>Sexo</strong></label>
+                                    <label for="sexo"><strong>Sexo*</strong></label>
                                 </div>
                                 <div>
                                     <label for="Masculino">
@@ -385,7 +385,7 @@
                             </li>
                             <li>
                                 <div>
-                                    <label for="idioma"><strong>Idioma</strong></label>
+                                    <label for="idioma"><strong>Idioma*</strong></label>
                                 </div>
                                 <div>
                                     <select name="idioma" value="<?php if (isset($_REQUEST['idioma'])) {echo $_REQUEST['idioma'];}?>">
