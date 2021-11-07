@@ -69,7 +69,7 @@
             <?php
             /*
              * @author: Alberto Fernandez Ramirez
-             * @version: v1.Realizacion de ejercicio
+             * @version: v2.Correcion del ejercicio
              * Created on: 21-octubre-2021
              * Ejercicio 25. Trabajar en PlantillaFormulario.php mi plantilla para hacer formularios como churros.
              * 
@@ -510,6 +510,8 @@
                                             if (in_array('OpcionCheckbox2', $_REQUEST['checkboxObligatorio'])) {echo "checked";}
                                         }
                                         ?>><label for="OpcionCheckbox2">OpcionCheckbox2</label>
+                                    
+                                    <?php echo '<span>' . $aErrores['checkboxObligatorio'] . '</span>'?>
                                 </div>
                             </li>
                             <!--Campo ListaDesplegable Obligatorio-->
@@ -539,7 +541,7 @@
         <footer class="piepagina">
             <a href="https://github.com/AlbertoFRSauces/proyectoTema3" target="_blank"><img src="../webroot/css/img/github.png" class="imagegithub" alt="IconoGitHub" /></a>
             <p><a>&copy;</a>Alberto Fernández Ramírez 29/09/2021 Todos los derechos reservados.</p>
-            <p>Ultima actualización: 28/10/2021 23:00</p>
+            <p>Ultima actualización: 07/11/2021 19:00</p>
         </footer>
         </main>
     </body>

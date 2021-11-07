@@ -68,7 +68,7 @@
             <?php
             /*
              * @author: Alberto Fernandez Ramirez
-             * @version: v1.1.Realizacion de ejercicio
+             * @version: v1.2.Correcion del ejercicio
              * Created on: 21-octubre-2021
              * Ejercicio 24. Construir un formulario para recoger un cuestionario realizado a una persona y mostrar en la misma página las preguntas y las respuestas recogidas; 
              * en el caso de que alguna respuesta esté vacía o errónea volverá a salir el formulario con el mensaje correspondiente, pero las respuestas que habíamos tecleado 
@@ -102,8 +102,8 @@
             
             //Creo el array con las opciones del checkbox
             $aCheckboxOpciones = [
-                'Si',
-                'No'
+                'si',
+                'no'
             ];
             
             //Creo el array con las opciones del RadioButton
@@ -251,7 +251,7 @@
             } else {
                 //Código que se ejecuta antes de rellenar el formulario
                 ?> 
-                <form name="formulario" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" class="form">
+                <form name="formulario" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" class="form">
                     <fieldset>
                         <p>Tus datos personales<p>
                         <ul>
@@ -373,14 +373,23 @@
                                     <label for="smartphone"><strong>Usa usted un smartphone</strong></label>
                                 </div>
                                 <div>
-                                    <label for="Si">
-                                        <input class="smartphone" type="checkbox" name="smartphone[]" id="Si" value="Si" 
-                                        <?php if (!empty($_REQUEST['smartphone'])) {
-                                            if (in_array('Si', $_REQUEST['smartphone'])) {echo "checked";}}?>>Si</label>
-                                    <label for="No">
-                                        <input class="smartphone" type="checkbox" name="smartphone[]" id="No" value="No" 
-                                        <?php if (!empty($_REQUEST['smartphone'])) {
-                                            if (in_array('No', $_REQUEST['smartphone'])) {echo "checked";}}?>>No</label>
+                                    <label for="si">
+                                        <input type="checkbox" name="smartphone[]" id="si" value="si" class="smartphone"<?php
+                                        if (!empty($_REQUEST['smartphone'])) {
+                                            if (in_array('si', $_REQUEST['smartphone'])) {
+                                                echo "checked";
+                                            }
+                                        }?>>Si</label>
+                                    
+                                    <label for="no">
+                                        <input type="checkbox" name="smartphone[]" id="no" value="no" class="smartphone"<?php 
+                                        if (!empty($_REQUEST['smartphone'])) {
+                                            if (in_array('no', $_REQUEST['smartphone'])) {
+                                                echo "checked";
+                                            }
+                                        }?>>No</label>
+                                    
+                                    <?php echo '<span>' . $aErrores['smartphone'] . '</span>'?>
                                 </div>
                             </li>
                             <li>
@@ -409,7 +418,7 @@
         <footer class="piepagina">
             <a href="https://github.com/AlbertoFRSauces/proyectoTema3" target="_blank"><img src="../webroot/css/img/github.png" class="imagegithub" alt="IconoGitHub" /></a>
             <p><a>&copy;</a>Alberto Fernández Ramírez 29/09/2021 Todos los derechos reservados.</p>
-            <p>Ultima actualización: 28/10/2021 23:00</p>
+            <p>Ultima actualización: 07/11/2021 23:00</p>
         </footer>
     </body>
 </html>
