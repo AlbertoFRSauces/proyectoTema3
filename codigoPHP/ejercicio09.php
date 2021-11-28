@@ -13,8 +13,8 @@
             * Created on: 14-octubre-2021
             * Ejercicio 9. Mostrar el path donde se encuentra el fichero que se esta ejecutando.
         */
-        //Mostrar con la variable superglobal $_SERVER el path.
-        echo $_SERVER('PATH'); 
+        //Mostrar con 'PHP_SELF' el path actual.
+         echo "<p>Path del fichero que se esta ejecutando con PHP_SELF: " .  $_SERVER['PHP_SELF']."</p>"; //El nombre del archivo de script ejecutándose actualmente, relativa al directorio raíz de documentos del servidor.
     ?>
 </body>
 </html>
