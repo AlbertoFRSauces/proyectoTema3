@@ -138,6 +138,7 @@ table{
 .piepagina p{
     color:#33333D;
     text-align:center;
+    margin-left: 31px;
 }
 .piepagina p:first-of-type{
     margin-top: 6px;
